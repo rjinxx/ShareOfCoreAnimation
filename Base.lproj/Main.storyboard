@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share of Core Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jRk-W3-haP">
+                                <rect key="frame" x="57" y="49" width="207" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.048170870091021084" green="0.056042839824408844" blue="0.80819038720000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button autoresizesSubviews="NO" opaque="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ov7-dw-Pea">
+                                <rect key="frame" x="24" y="123" width="272" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59102399945524797" green="0.83799027423469385" blue="0.80244116074373073" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="CAIntroduction">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="introAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qCO-rS-ypP"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" alpha="0.60000002384185791" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fdB-OG-3ou">
+                                <rect key="frame" x="24" y="243" width="272" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59102399949999995" green="0.83799027420000005" blue="0.80244116070000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="CA Tech Part A">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="partAAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="87P-dz-Tcz"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" alpha="0.60000002384185791" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TbP-bk-9tU">
+                                <rect key="frame" x="24" y="303" width="272" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59102399949999995" green="0.83799027420000005" blue="0.80244116070000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="CA Tech Part B">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="partBAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fyn-53-zHF"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" alpha="0.60000002384185791" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iwy-U5-MJD">
+                                <rect key="frame" x="24" y="483" width="272" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59102399949999995" green="0.83799027420000005" blue="0.80244116070000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Supplement">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="supplementAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="We3-7V-fdt"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" alpha="0.60000002384185791" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bsg-E3-Q9L">
+                                <rect key="frame" x="24" y="363" width="272" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59102399949999995" green="0.83799027420000005" blue="0.80244116070000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="CA Tech Part C">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="partCAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="efh-Xd-gy3"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" alpha="0.60000002384185791" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qGv-59-18d">
+                                <rect key="frame" x="24" y="183" width="272" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59102399949999995" green="0.83799027420000005" blue="0.80244116070000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Layer Property">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="layerPropertyAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="h09-re-TO5"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" alpha="0.60000002384185791" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gum-eb-MIH">
+                                <rect key="frame" x="24" y="423" width="272" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59102399949999995" green="0.83799027420000005" blue="0.80244116070000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="CA Tech Part D">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="partDAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yMO-2B-Oce"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="introButton" destination="Ov7-dw-Pea" id="TeV-Lr-B5K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
