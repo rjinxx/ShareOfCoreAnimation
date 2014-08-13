@@ -54,7 +54,7 @@
     orbit.additive = YES;
     orbit.repeatCount = HUGE_VALF;
     orbit.calculationMode = kCAAnimationPaced;
-    orbit.rotationMode = kCAAnimationRotateAuto;
+    orbit.rotationMode = /*kCAAnimationRotateAuto*/ nil;
     
     [self.tracker.layer addAnimation:orbit forKey:@"ani-track"];
 }

@@ -38,21 +38,20 @@
     [self.view.layer addSublayer:layer];
     [self setDemoLayer:layer];
    
-
-    [self.layerView setBackgroundColor:[UIColor grayColor]];
+/*
     UIImage *image = [UIImage imageNamed:@"Snowman"];
     self.layerView.layer.contents = (__bridge id)(image.CGImage);
     self.layerView.layer.contentsGravity = kCAGravityResizeAspect;
     self.layerView.layer.contentsScale = image.scale;
     [self performSelector:@selector(changeImage) withObject:nil afterDelay:0.25];
- 
+*/
 }
 
 - (IBAction)movePostionAction:(id)sender
 {
-//    [self.demoLayer moveLayerPosition];
+    [self.demoLayer moveLayerPosition];
     
-    [self.demoLayer moveLayerWithAnimation];
+    // [self.demoLayer moveLayerWithAnimation];
 }
 
 - (void)addStretchableImage:(UIImage *)image

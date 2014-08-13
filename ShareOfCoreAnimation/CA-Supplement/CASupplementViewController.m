@@ -54,25 +54,25 @@
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
     animation.duration = 1;
     
-//    if (!isGoingUP) {
-//        isGoingUP = YES;
-//        animation.fromValue = fromValue;
-//        animation.toValue = toValue;
-//        endValue = toValue;
-//    }
-//    else {
-//        isGoingUP = NO;
-//        animation.fromValue = toValue;
-//        animation.toValue = fromValue;
-//        endValue = fromValue;
-//    }
-//    
-//    self.demoImgView.layer.position = CGPointMake(self.demoImgView.layer.position.x, [endValue intValue]);
-//    
-//    NSString *key = [NSString stringWithFormat:@"ani-move"];
-//    [self.demoImgView.layer addAnimation:animation forKey:key];
+    if (!isGoingUP) {
+        isGoingUP = YES;
+        animation.fromValue = fromValue;
+        animation.toValue = toValue;
+        endValue = toValue;
+    }
+    else {
+        isGoingUP = NO;
+        animation.fromValue = toValue;
+        animation.toValue = fromValue;
+        endValue = fromValue;
+    }
     
-
+    self.demoImgView.layer.position = CGPointMake(self.demoImgView.layer.position.x, [endValue intValue]);
+    
+    NSString *key = [NSString stringWithFormat:@"ani-move"];
+    [self.demoImgView.layer addAnimation:animation forKey:key];
+    
+/*
     if (!isGoingUP)
     {
         isGoingUP = YES;
@@ -91,7 +91,7 @@
     
     NSString *key = [NSString stringWithFormat:@"ani-move"];
     [self.demoImgView.layer addAnimation:animation forKey:key];
- 
+ */
 }
 
 - (IBAction)backToMainView:(id)sender
