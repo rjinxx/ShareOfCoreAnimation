@@ -46,15 +46,15 @@
 {
     CABasicAnimation *rotation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
     
-    rotation.fromValue = @(0); rotation.toValue = @(M_PI/2);
+    rotation.fromValue = @(0); rotation.toValue = @(M_PI*2);
     rotation.duration = 1.f; rotation.repeatCount = /*INFINITY*/ 1;
     
-    rotation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    rotation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
 
     // rotation.fillMode = kCAFillModeForwards;
     // rotation.removedOnCompletion = NO;
     
-    // self.demoImgView.transform = CGAffineTransformMakeRotation(M_PI/2);
+    self.demoImgView.transform = CGAffineTransformMakeRotation(M_PI*2);
     
     [self.demoImgView.layer addAnimation:rotation forKey:@"an_roate"];
 }

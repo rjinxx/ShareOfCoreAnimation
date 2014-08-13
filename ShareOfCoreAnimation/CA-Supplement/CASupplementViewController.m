@@ -53,7 +53,7 @@
     animation.keyPath = @"position.y";
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
     animation.duration = 1;
-    
+/*
     if (!isGoingUP) {
         isGoingUP = YES;
         animation.fromValue = fromValue;
@@ -71,8 +71,8 @@
     
     NSString *key = [NSString stringWithFormat:@"ani-move"];
     [self.demoImgView.layer addAnimation:animation forKey:key];
-    
-/*
+*/
+
     if (!isGoingUP)
     {
         isGoingUP = YES;
@@ -91,7 +91,6 @@
     
     NSString *key = [NSString stringWithFormat:@"ani-move"];
     [self.demoImgView.layer addAnimation:animation forKey:key];
- */
 }
 
 - (IBAction)backToMainView:(id)sender
