@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4923587B1AB27FF400F41190 /* ShapeAniLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4923587A1AB27FF400F41190 /* ShapeAniLayer.m */; };
+		4923587E1AB2801900F41190 /* ShapeLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4923587D1AB2801900F41190 /* ShapeLayerController.m */; };
 		4965ADA21999E58300DA77F3 /* Snowman.png in Resources */ = {isa = PBXBuildFile; fileRef = 4965ADA01999E58300DA77F3 /* Snowman.png */; };
 		4965ADA31999E58300DA77F3 /* Snowman@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4965ADA11999E58300DA77F3 /* Snowman@2x.png */; };
 		4972F42D19986EF900CD2201 /* LayerPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4972F42B19986EF900CD2201 /* LayerPropertyViewController.m */; };
@@ -59,6 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		492358791AB27FF400F41190 /* ShapeAniLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShapeAniLayer.h; path = "CA-Part-C/ShapeAniLayer.h"; sourceTree = "<group>"; };
+		4923587A1AB27FF400F41190 /* ShapeAniLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShapeAniLayer.m; path = "CA-Part-C/ShapeAniLayer.m"; sourceTree = "<group>"; };
+		4923587C1AB2801900F41190 /* ShapeLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShapeLayerController.h; path = "CA-Part-C/ShapeLayerController.h"; sourceTree = "<group>"; };
+		4923587D1AB2801900F41190 /* ShapeLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShapeLayerController.m; path = "CA-Part-C/ShapeLayerController.m"; sourceTree = "<group>"; };
 		4965ADA01999E58300DA77F3 /* Snowman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Snowman.png; path = Resource/Snowman.png; sourceTree = "<group>"; };
 		4965ADA11999E58300DA77F3 /* Snowman@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Snowman@2x.png"; path = "Resource/Snowman@2x.png"; sourceTree = "<group>"; };
 		4972F42A19986EF900CD2201 /* LayerPropertyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerPropertyViewController.h; path = LayerProperty/LayerPropertyViewController.h; sourceTree = "<group>"; };
@@ -300,9 +306,13 @@
 		49CACC211994CF7E0083DEDA /* CA-Part-C */ = {
 			isa = PBXGroup;
 			children = (
+				492358791AB27FF400F41190 /* ShapeAniLayer.h */,
+				4923587A1AB27FF400F41190 /* ShapeAniLayer.m */,
 				49CACC221994CFB00083DEDA /* CAPartCViewController.h */,
 				49CACC231994CFB00083DEDA /* CAPartCViewController.m */,
 				49CACC241994CFB00083DEDA /* CAPartCViewController.xib */,
+				4923587C1AB2801900F41190 /* ShapeLayerController.h */,
+				4923587D1AB2801900F41190 /* ShapeLayerController.m */,
 			);
 			name = "CA-Part-C";
 			sourceTree = "<group>";
@@ -420,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4923587B1AB27FF400F41190 /* ShapeAniLayer.m in Sources */,
 				4972F43119986F1800CD2201 /* DemoLayer.m in Sources */,
 				49CACBD41994666D0083DEDA /* ViewController.m in Sources */,
 				4972F43619989D4A00CD2201 /* CAPartDViewController.m in Sources */,
@@ -428,6 +439,7 @@
 				49CACC0219949B440083DEDA /* CAPartAViewController.m in Sources */,
 				49CACBCE1994666D0083DEDA /* AppDelegate.m in Sources */,
 				49CACC171994AE8E0083DEDA /* CAPartBViewController.m in Sources */,
+				4923587E1AB2801900F41190 /* ShapeLayerController.m in Sources */,
 				49CACC1D1994C2150083DEDA /* CASupplementViewController.m in Sources */,
 				49CACBCA1994666D0083DEDA /* main.m in Sources */,
 				49CACC251994CFB00083DEDA /* CAPartCViewController.m in Sources */,

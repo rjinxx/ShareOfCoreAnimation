@@ -7,6 +7,7 @@
 //
 
 #import "CAPartCViewController.h"
+#import "ShapeLayerController.h"
 
 @interface CAPartCViewController ()
 
@@ -121,6 +122,12 @@
 - (IBAction)backToMainView:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)customLayerAction:(id)sender
+{
+    ShapeLayerController *layVC = [[ShapeLayerController alloc] init];
+    [self presentViewController:layVC animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

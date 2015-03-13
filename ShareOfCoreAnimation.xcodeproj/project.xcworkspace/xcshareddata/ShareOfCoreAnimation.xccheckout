@@ -10,29 +10,29 @@
 	<string>ShareOfCoreAnimation</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>B4127BC6-D647-4CDE-9551-2550EDE39C0C</key>
+		<key>4A3D1B96F69B9D3DBB4BD291A1D9F68AFEFE94AD</key>
 		<string>https://github.com/StephenJin/ShareOfCoreAnimation.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ShareOfCoreAnimation.xcodeproj/project.xcworkspace</string>
+	<string>ShareOfCoreAnimation.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>B4127BC6-D647-4CDE-9551-2550EDE39C0C</key>
+		<key>4A3D1B96F69B9D3DBB4BD291A1D9F68AFEFE94AD</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/StephenJin/ShareOfCoreAnimation.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B4127BC6-D647-4CDE-9551-2550EDE39C0C</string>
+	<string>4A3D1B96F69B9D3DBB4BD291A1D9F68AFEFE94AD</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B4127BC6-D647-4CDE-9551-2550EDE39C0C</string>
+			<string>4A3D1B96F69B9D3DBB4BD291A1D9F68AFEFE94AD</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ShareOfCoreAnimation</string>
 		</dict>
