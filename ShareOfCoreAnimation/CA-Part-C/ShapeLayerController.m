@@ -36,16 +36,16 @@
     CGFloat xRigth      = (sWidth - 35.f);
     CGFloat mHeight     = (sWidth - 2 * 35.f) * 537.f / 600.f;
     
-    CGPoint bottomLeft  = CGPointMake(35.f, mHeight + 200.f);
-    CGPoint topLeft     = CGPointMake(35.f, 200.f);
-    CGPoint bottomRight = CGPointMake(xRigth, mHeight + 200.f);
-    CGPoint topRight    = CGPointMake(xRigth, 200.f);
+    CGPoint bottomLeft  = CGPointMake(35.f, mHeight + 250.f);
+    CGPoint topLeft     = CGPointMake(35.f, 250.f);
+    CGPoint bottomRight = CGPointMake(xRigth, mHeight + 250.f);
+    CGPoint topRight    = CGPointMake(xRigth, 250.f);
     CGPoint roofTip     = CGPointMake(sWidth / 2.f, mHeight + xRigth / 2.f);
-
+    
     CGPoint leftTemp    = CGPointMake(80.f, mHeight - 100.f);
     CGPoint rightTemp   = CGPointMake(sWidth - 80.f, mHeight - 100.f);
 
-    UIBezierPath *path = [UIBezierPath bezierPath];
+    UIBezierPath *path  = [UIBezierPath bezierPath];
     [path moveToPoint:bottomLeft];
     [path addLineToPoint:topLeft];
     [path addQuadCurveToPoint:topRight controlPoint:roofTip];
