@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CAPartAViewController">
@@ -15,59 +21,74 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3gd-Qw-RUN">
-                    <rect key="frame" x="125" y="524" width="71" height="24"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" backgroundImage="arcsoft.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gd-Qw-RUN">
+                    <rect key="frame" x="133.5" y="518" width="54" height="30"/>
+                    <state key="normal" title="Dismiss">
+                        <color key="titleColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="backToMainView:" destination="-1" eventType="touchUpInside" id="UR9-Hs-XlJ"/>
                     </connections>
                 </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic Animations Using CA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="96V-vt-OIU">
-                    <rect key="frame" x="50" y="40" width="221" height="47"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic Animations Using CA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96V-vt-OIU">
+                    <rect key="frame" x="51.5" y="60" width="218" height="21.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.png" id="ZWO-Rs-g47">
-                    <rect key="frame" x="110" y="187" width="103" height="103"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZWO-Rs-g47">
+                    <rect key="frame" x="108.5" y="187" width="103" height="103"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="103" id="Puc-Xh-IFw"/>
+                        <constraint firstAttribute="width" constant="103" id="pTe-Ks-YXZ"/>
+                    </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tracker.png" id="hNT-Oq-lZk">
-                    <rect key="frame" x="139" y="308" width="45" height="32"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tracker.png" translatesAutoresizingMaskIntoConstraints="NO" id="hNT-Oq-lZk">
+                    <rect key="frame" x="137.5" y="308" width="45" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="Uhw-kf-3d2"/>
+                        <constraint firstAttribute="width" constant="45" id="VfG-Fl-2Rv"/>
+                    </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Jo7-u9-R4v">
-                    <rect key="frame" x="20" y="386" width="108" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jo7-u9-R4v">
+                    <rect key="frame" x="20" y="386" width="75" height="30"/>
                     <state key="normal" title="CAShaking">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="shakeAnimation:" destination="-1" eventType="touchUpInside" id="kEi-u4-ExA"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Hxj-uH-BJZ">
-                    <rect key="frame" x="215" y="386" width="80" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxj-uH-BJZ">
+                    <rect key="frame" x="217" y="386" width="78" height="30"/>
                     <state key="normal" title="CATracking">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="trackAnimation:" destination="-1" eventType="touchUpInside" id="vhm-gb-wOr"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3gd-Qw-RUN" firstAttribute="centerX" secondItem="Uyv-qj-lI6" secondAttribute="centerX" id="AGR-Jf-iUs"/>
+                <constraint firstItem="Uyv-qj-lI6" firstAttribute="bottom" secondItem="3gd-Qw-RUN" secondAttribute="bottom" constant="20" id="KXb-ja-aFd"/>
+                <constraint firstItem="Jo7-u9-R4v" firstAttribute="top" secondItem="hNT-Oq-lZk" secondAttribute="bottom" constant="46" id="TOX-Rl-cXU"/>
+                <constraint firstItem="Uyv-qj-lI6" firstAttribute="trailing" secondItem="Hxj-uH-BJZ" secondAttribute="trailing" constant="25" id="ViO-uV-ESI"/>
+                <constraint firstItem="hNT-Oq-lZk" firstAttribute="top" secondItem="ZWO-Rs-g47" secondAttribute="bottom" constant="18" id="a9A-go-exi"/>
+                <constraint firstItem="Jo7-u9-R4v" firstAttribute="leading" secondItem="Uyv-qj-lI6" secondAttribute="leading" constant="20" id="dOp-5Y-p6F"/>
+                <constraint firstItem="96V-vt-OIU" firstAttribute="centerX" secondItem="Uyv-qj-lI6" secondAttribute="centerX" id="euh-7f-D0o"/>
+                <constraint firstItem="ZWO-Rs-g47" firstAttribute="top" secondItem="96V-vt-OIU" secondAttribute="bottom" constant="105.5" id="hGK-vj-fmo"/>
+                <constraint firstItem="hNT-Oq-lZk" firstAttribute="centerX" secondItem="Uyv-qj-lI6" secondAttribute="centerX" id="j2l-Fy-lIn"/>
+                <constraint firstItem="Hxj-uH-BJZ" firstAttribute="top" secondItem="hNT-Oq-lZk" secondAttribute="bottom" constant="46" id="jSj-HK-oH2"/>
+                <constraint firstItem="96V-vt-OIU" firstAttribute="top" secondItem="Uyv-qj-lI6" secondAttribute="top" constant="40" id="wET-FG-Zo0"/>
+                <constraint firstItem="ZWO-Rs-g47" firstAttribute="centerX" secondItem="Uyv-qj-lI6" secondAttribute="centerX" id="zhc-Mj-d2A"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Uyv-qj-lI6"/>
         </view>
     </objects>
     <resources>
-        <image name="arcsoft.png" width="141" height="47"/>
         <image name="circle.png" width="205" height="205"/>
         <image name="tracker.png" width="90" height="64"/>
     </resources>

@@ -34,7 +34,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     DemoLayer *layer = [[DemoLayer alloc] init];
-    [layer setFrame:CGRectMake(135, 100, 50, 50)];
+    CGFloat sWidth   = [UIScreen mainScreen].bounds.size.width;
+    [layer setFrame:CGRectMake((sWidth - 50) / 2.f, 125, 50, 50)];
     [self.view.layer addSublayer:layer];
     [self setDemoLayer:layer];
    

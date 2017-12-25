@@ -36,7 +36,6 @@
 		49CACBFD19946CD40083DEDA /* CAIntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CACBFB19946CD40083DEDA /* CAIntroViewController.xib */; };
 		49CACC0219949B440083DEDA /* CAPartAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CACC0019949B440083DEDA /* CAPartAViewController.m */; };
 		49CACC0319949B440083DEDA /* CAPartAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CACC0119949B440083DEDA /* CAPartAViewController.xib */; };
-		49CACC0F1994AC560083DEDA /* arcsoft.png in Resources */ = {isa = PBXBuildFile; fileRef = 49CACC0B1994AC560083DEDA /* arcsoft.png */; };
 		49CACC101994AC560083DEDA /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 49CACC0C1994AC560083DEDA /* circle.png */; };
 		49CACC111994AC560083DEDA /* Core Animation.png in Resources */ = {isa = PBXBuildFile; fileRef = 49CACC0D1994AC560083DEDA /* Core Animation.png */; };
 		49CACC121994AC560083DEDA /* tracker.png in Resources */ = {isa = PBXBuildFile; fileRef = 49CACC0E1994AC560083DEDA /* tracker.png */; };
@@ -102,7 +101,6 @@
 		49CACBFF19949B440083DEDA /* CAPartAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAPartAViewController.h; path = "CA-Part-A/CAPartAViewController.h"; sourceTree = "<group>"; };
 		49CACC0019949B440083DEDA /* CAPartAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CAPartAViewController.m; path = "CA-Part-A/CAPartAViewController.m"; sourceTree = "<group>"; };
 		49CACC0119949B440083DEDA /* CAPartAViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CAPartAViewController.xib; path = "CA-Part-A/CAPartAViewController.xib"; sourceTree = "<group>"; };
-		49CACC0B1994AC560083DEDA /* arcsoft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arcsoft.png; path = Resource/arcsoft.png; sourceTree = "<group>"; };
 		49CACC0C1994AC560083DEDA /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = Resource/circle.png; sourceTree = "<group>"; };
 		49CACC0D1994AC560083DEDA /* Core Animation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Core Animation.png"; path = "Resource/Core Animation.png"; sourceTree = "<group>"; };
 		49CACC0E1994AC560083DEDA /* tracker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tracker.png; path = Resource/tracker.png; sourceTree = "<group>"; };
@@ -275,7 +273,6 @@
 				4972F43919989F3B00CD2201 /* demo_pic2.png */,
 				49CACC271994D0930083DEDA /* test.jpg */,
 				49CACC1F1994C3F20083DEDA /* head_icon.png */,
-				49CACC0B1994AC560083DEDA /* arcsoft.png */,
 				49CACC0C1994AC560083DEDA /* circle.png */,
 				49CACC0D1994AC560083DEDA /* Core Animation.png */,
 				49CACC0E1994AC560083DEDA /* tracker.png */,
@@ -360,7 +357,7 @@
 		49CACBB21994666D0083DEDA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = ArcSoft;
 				TargetAttributes = {
 					49CACBDA1994666D0083DEDA = {
@@ -408,7 +405,6 @@
 				49CACC121994AC560083DEDA /* tracker.png in Resources */,
 				49CACC281994D0930083DEDA /* test.jpg in Resources */,
 				49CACC181994AE8E0083DEDA /* CAPartBViewController.xib in Resources */,
-				49CACC0F1994AC560083DEDA /* arcsoft.png in Resources */,
 				49CACC111994AC560083DEDA /* Core Animation.png in Resources */,
 				4965ADA31999E58300DA77F3 /* Snowman@2x.png in Resources */,
 				49CACC0319949B440083DEDA /* CAPartAViewController.xib in Resources */,
@@ -500,18 +496,30 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -524,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -538,25 +546,36 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -570,6 +589,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShareOfCoreAnimation/ShareOfCoreAnimation-Prefix.pch";
 				INFOPLIST_FILE = "ShareOfCoreAnimation/ShareOfCoreAnimation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ArcSoft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -583,6 +604,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShareOfCoreAnimation/ShareOfCoreAnimation-Prefix.pch";
 				INFOPLIST_FILE = "ShareOfCoreAnimation/ShareOfCoreAnimation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ArcSoft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -604,6 +627,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "ShareOfCoreAnimationTests/ShareOfCoreAnimationTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "ArcSoft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -622,6 +646,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShareOfCoreAnimation/ShareOfCoreAnimation-Prefix.pch";
 				INFOPLIST_FILE = "ShareOfCoreAnimationTests/ShareOfCoreAnimationTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "ArcSoft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

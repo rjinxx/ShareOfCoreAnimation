@@ -42,14 +42,18 @@
 {
     [self.demoImgView removeFromSuperview]; self.demoImgView = nil;
     
-    CGPoint bottomLeft 	= CGPointMake(35.f, 400.f);
-    CGPoint topLeft		= CGPointMake(35.f, 200.f);
-    CGPoint bottomRight = CGPointMake(285.f, 400.f);
-    CGPoint topRight	= CGPointMake(285.f, 200.f);
-    CGPoint roofTip		= CGPointMake(160.f, 300.f);
+    CGFloat sWidth      = [UIScreen mainScreen].bounds.size.width;
+    CGFloat xRigth      = (sWidth - 35.f);
+    CGFloat mHeight     = (sWidth - 2 * 35.f) * 537.f / 600.f;
     
-    CGPoint leftTemp    = CGPointMake(80.f, 150.f);
-    CGPoint rightTemp   = CGPointMake(240.f, 150.f);
+    CGPoint bottomLeft 	= CGPointMake(35.f, mHeight + 200.f);
+    CGPoint topLeft		= CGPointMake(35.f, 200.f);
+    CGPoint bottomRight = CGPointMake(xRigth, mHeight + 200.f);
+    CGPoint topRight	= CGPointMake(xRigth, 200.f);
+    CGPoint roofTip		= CGPointMake(sWidth / 2.f, mHeight + xRigth / 2.f);
+    
+    CGPoint leftTemp    = CGPointMake(80.f, mHeight - 100.f);
+    CGPoint rightTemp   = CGPointMake(sWidth - 80.f, mHeight - 100.f);
     
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:bottomLeft];
@@ -81,7 +85,7 @@
     pathLayer.fillColor = [UIColor greenColor].CGColor;
     pathLayer.lineJoin = kCALineJoinBevel;
     
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [imageView setImage:[UIImage imageNamed:@"test.jpg"]];
     imageView.layer.mask = pathLayer;
     [imageView setContentMode:UIViewContentModeScaleAspectFit];

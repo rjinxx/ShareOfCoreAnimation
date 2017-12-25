@@ -25,22 +25,26 @@
     // Do any additional setup after loading the view, typically from a nib.
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(110, 50, 100, 50)];
+    CGFloat sWidth   = [UIScreen mainScreen].bounds.size.width;
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake((sWidth - 100.f)/2.f, 50, 100, 50)];
     [button setTitle:@"Re-animate" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [button addTarget:self action:@selector(ReAnimation) forControlEvents:UIControlEventTouchUpInside];
     [button setExclusiveTouch:YES];
     [self.view addSubview:button];
     
-    CGPoint bottomLeft 	= CGPointMake(35.f, 400.f);
-    CGPoint topLeft		= CGPointMake(35.f, 200.f);
-    CGPoint bottomRight = CGPointMake(285.f, 400.f);
-    CGPoint topRight	= CGPointMake(285.f, 200.f);
-    CGPoint roofTip		= CGPointMake(160.f, 300.f);
+    CGFloat xRigth      = (sWidth - 35.f);
+    CGFloat mHeight     = (sWidth - 2 * 35.f) * 537.f / 600.f;
     
-    CGPoint leftTemp    = CGPointMake(80.f, 150.f);
-    CGPoint rightTemp   = CGPointMake(240.f, 150.f);
-    
+    CGPoint bottomLeft  = CGPointMake(35.f, mHeight + 200.f);
+    CGPoint topLeft     = CGPointMake(35.f, 200.f);
+    CGPoint bottomRight = CGPointMake(xRigth, mHeight + 200.f);
+    CGPoint topRight    = CGPointMake(xRigth, 200.f);
+    CGPoint roofTip     = CGPointMake(sWidth / 2.f, mHeight + xRigth / 2.f);
+
+    CGPoint leftTemp    = CGPointMake(80.f, mHeight - 100.f);
+    CGPoint rightTemp   = CGPointMake(sWidth - 80.f, mHeight - 100.f);
+
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:bottomLeft];
     [path addLineToPoint:topLeft];
@@ -69,7 +73,7 @@
     [imageView setContentMode:UIViewContentModeScaleAspectFit];
     [self.view addSubview:imageView];
     
-    UIButton *backBtn = [[UIButton alloc] initWithFrame:CGRectMake(125, 475, 71, 24)];
+    UIButton *backBtn = [[UIButton alloc] initWithFrame:CGRectMake((sWidth - 71.f)/2.f, 550, 71, 24)];
     [backBtn setTitle:@"Back" forState:UIControlStateNormal];
     [backBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];

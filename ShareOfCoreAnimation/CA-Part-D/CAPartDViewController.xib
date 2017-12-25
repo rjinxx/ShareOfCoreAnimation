@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CAPartDViewController">
@@ -16,49 +22,61 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qm-wW-7xv">
-                    <rect key="frame" x="125" y="524" width="71" height="24"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" backgroundImage="arcsoft.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qm-wW-7xv">
+                    <rect key="frame" x="133.5" y="518" width="54" height="30"/>
+                    <state key="normal" title="Dismiss">
+                        <color key="titleColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="backToMainView:" destination="-1" eventType="touchUpInside" id="LQT-kM-y9m"/>
                     </connections>
                 </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CA Group Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9t-L0-kx0">
-                    <rect key="frame" x="50" y="38" width="221" height="47"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CA Group Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9t-L0-kx0">
+                    <rect key="frame" x="78.5" y="60" width="164" height="21.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="demo_pic1.png" translatesAutoresizingMaskIntoConstraints="NO" id="S2B-ep-ovu">
-                    <rect key="frame" x="101" y="150" width="119" height="150"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo_pic1.png" translatesAutoresizingMaskIntoConstraints="NO" id="S2B-ep-ovu">
+                    <rect key="frame" x="101" y="219" width="119" height="150"/>
                 </imageView>
-                <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="demo_pic2.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Py-3S-rEa">
-                    <rect key="frame" x="101" y="150" width="119" height="150"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo_pic2.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Py-3S-rEa">
+                    <rect key="frame" x="101" y="219" width="119" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="8XU-TZ-Ttw"/>
+                        <constraint firstAttribute="width" constant="119" id="jOZ-xS-B5Y"/>
+                    </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mu0-ux-Tzl">
-                    <rect key="frame" x="100" y="408" width="121" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mu0-ux-Tzl">
+                    <rect key="frame" x="127" y="419" width="67" height="30"/>
                     <state key="normal" title="ReShuffle">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="ReShuffle:" destination="-1" eventType="touchUpInside" id="27Y-WC-6aw"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mu0-ux-Tzl" firstAttribute="centerX" secondItem="VfL-9J-nwB" secondAttribute="centerX" id="5D5-3N-Ti9"/>
+                <constraint firstItem="4Py-3S-rEa" firstAttribute="centerY" secondItem="VfL-9J-nwB" secondAttribute="centerY" id="8L0-KG-w3l"/>
+                <constraint firstItem="S2B-ep-ovu" firstAttribute="width" secondItem="4Py-3S-rEa" secondAttribute="width" id="BR1-15-smS"/>
+                <constraint firstItem="mu0-ux-Tzl" firstAttribute="top" secondItem="4Py-3S-rEa" secondAttribute="bottom" constant="50" id="Nrp-Xx-R6w"/>
+                <constraint firstItem="S2B-ep-ovu" firstAttribute="centerY" secondItem="VfL-9J-nwB" secondAttribute="centerY" id="PcJ-jE-cfV"/>
+                <constraint firstItem="S2B-ep-ovu" firstAttribute="height" secondItem="4Py-3S-rEa" secondAttribute="height" id="QVZ-6a-gL4"/>
+                <constraint firstItem="E9t-L0-kx0" firstAttribute="top" secondItem="VfL-9J-nwB" secondAttribute="top" constant="40" id="T2i-L8-1r4"/>
+                <constraint firstItem="VfL-9J-nwB" firstAttribute="bottom" secondItem="3Qm-wW-7xv" secondAttribute="bottom" constant="20" id="gvI-G9-QMr"/>
+                <constraint firstItem="E9t-L0-kx0" firstAttribute="centerX" secondItem="VfL-9J-nwB" secondAttribute="centerX" id="hb0-5l-qWR"/>
+                <constraint firstItem="4Py-3S-rEa" firstAttribute="centerX" secondItem="VfL-9J-nwB" secondAttribute="centerX" id="pVW-UV-cqu"/>
+                <constraint firstItem="3Qm-wW-7xv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rNx-g5-FTm"/>
+                <constraint firstItem="S2B-ep-ovu" firstAttribute="centerX" secondItem="VfL-9J-nwB" secondAttribute="centerX" id="v57-Ix-4Bb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VfL-9J-nwB"/>
         </view>
     </objects>
     <resources>
-        <image name="arcsoft.png" width="141" height="47"/>
         <image name="demo_pic1.png" width="390" height="500"/>
         <image name="demo_pic2.png" width="390" height="500"/>
     </resources>

@@ -36,11 +36,14 @@
 {
     [self.animationLayer removeFromSuperlayer]; self.animationLayer = nil;
     
-    CGPoint bottomLeft 	= CGPointMake(35.f, 400.f);
-    CGPoint topLeft		= CGPointMake(35.f, 200.f);
-    CGPoint bottomRight = CGPointMake(285.f, 400.f);
-    CGPoint topRight	= CGPointMake(285.f, 200.f);
-    CGPoint roofTip		= CGPointMake(160.f, 100.f);
+    CGFloat sWidth      = [UIScreen mainScreen].bounds.size.width;
+    CGFloat xRigth      = (sWidth - 35.f);
+
+    CGPoint bottomLeft 	= CGPointMake(35.f, 450.f);
+    CGPoint topLeft		= CGPointMake(35.f, 250.f);
+    CGPoint bottomRight = CGPointMake(xRigth, 450.f);
+    CGPoint topRight	= CGPointMake(xRigth, 250.f);
+    CGPoint roofTip		= CGPointMake(sWidth/2.f, 150.f);
     
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:bottomLeft];

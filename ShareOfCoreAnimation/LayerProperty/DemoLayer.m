@@ -25,7 +25,7 @@
 {
     // [CATransaction setDisableActions:YES];
 
-    CGFloat endPoint = self.position.y > 250 ? 125 : 410;
+    CGFloat endPoint = self.position.y > 250 ? 150 : 450;
     
     [self setPosition:CGPointMake(self.position.x, endPoint)];
 }
@@ -35,7 +35,7 @@
     [CATransaction begin];
     [CATransaction setValue:[NSNumber numberWithFloat:1.5f] forKey:kCATransactionAnimationDuration];
     
-    CGFloat endPoint = self.position.y > 250 ? 125 : 410;
+    CGFloat endPoint = self.position.y > 250 ? 150 : 450;
     [self setPosition:CGPointMake(self.position.x, endPoint)];
     
     [CATransaction commit];

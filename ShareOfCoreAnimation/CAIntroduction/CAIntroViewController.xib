@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CAIntroViewController">
@@ -17,75 +23,87 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Core Animation.png" id="BEC-ef-D1Z">
+                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Core Animation.png" translatesAutoresizingMaskIntoConstraints="NO" id="BEC-ef-D1Z">
                     <rect key="frame" x="35" y="165" width="250" height="139"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="139" id="25f-TR-zpF"/>
+                        <constraint firstAttribute="width" constant="250" id="sbc-7b-Wvl"/>
+                    </constraints>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organization chart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iZC-aQ-rz0">
-                    <rect key="frame" x="73" y="57" width="175" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organization chart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZC-aQ-rz0">
+                    <rect key="frame" x="89.5" y="60" width="142" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zdk-bL-SxE">
-                    <rect key="frame" x="20" y="372" width="115" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdk-bL-SxE">
+                    <rect key="frame" x="20" y="372" width="95" height="30"/>
                     <state key="normal" title="UIKit Rotation">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="kitRotateAction:" destination="-1" eventType="touchUpInside" id="5TU-4n-HPj"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EAR-Dt-gJR">
-                    <rect key="frame" x="185" y="372" width="115" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAR-Dt-gJR">
+                    <rect key="frame" x="218" y="372" width="82" height="30"/>
                     <state key="normal" title="CA Rotation">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="caRotateAction:" destination="-1" eventType="touchUpInside" id="jyS-SQ-e6R"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0io-uc-LCL">
-                    <rect key="frame" x="37" y="441" width="80" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0io-uc-LCL">
+                    <rect key="frame" x="37" y="441" width="73" height="30"/>
                     <state key="normal" title="X-Rotation">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="XRotateAction:" destination="-1" eventType="touchUpInside" id="Qej-99-8sn"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S6c-S3-SD7">
-                    <rect key="frame" x="197" y="441" width="91" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6c-S3-SD7">
+                    <rect key="frame" x="215" y="441" width="73" height="30"/>
                     <state key="normal" title="Y-Rotation">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="YRotateAction:" destination="-1" eventType="touchUpInside" id="V6x-8Z-6aH"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LxO-xR-zqy">
-                    <rect key="frame" x="125" y="524" width="71" height="24"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" backgroundImage="arcsoft.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxO-xR-zqy">
+                    <rect key="frame" x="133.5" y="518" width="54" height="30"/>
+                    <state key="normal" title="Dismiss">
+                        <color key="titleColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="backToMainView:" destination="-1" eventType="touchUpInside" id="cJD-KU-3Fi"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iZC-aQ-rz0" firstAttribute="centerX" secondItem="6a4-er-Nez" secondAttribute="centerX" id="2Rc-Ws-2i7"/>
+                <constraint firstItem="0io-uc-LCL" firstAttribute="leading" secondItem="6a4-er-Nez" secondAttribute="leading" constant="37" id="55p-AB-FdG"/>
+                <constraint firstItem="zdk-bL-SxE" firstAttribute="top" secondItem="BEC-ef-D1Z" secondAttribute="bottom" constant="68" id="8pj-x5-v9o"/>
+                <constraint firstItem="iZC-aQ-rz0" firstAttribute="top" secondItem="6a4-er-Nez" secondAttribute="top" constant="40" id="EhY-pB-LyE"/>
+                <constraint firstItem="BEC-ef-D1Z" firstAttribute="centerX" secondItem="6a4-er-Nez" secondAttribute="centerX" id="Q6j-UE-tW6"/>
+                <constraint firstItem="zdk-bL-SxE" firstAttribute="leading" secondItem="6a4-er-Nez" secondAttribute="leading" constant="20" id="S6V-gm-cPF"/>
+                <constraint firstItem="6a4-er-Nez" firstAttribute="bottom" secondItem="LxO-xR-zqy" secondAttribute="bottom" constant="20" id="SUC-KB-8NJ"/>
+                <constraint firstItem="BEC-ef-D1Z" firstAttribute="top" secondItem="iZC-aQ-rz0" secondAttribute="bottom" constant="84" id="W9Q-ts-ZKS"/>
+                <constraint firstItem="S6c-S3-SD7" firstAttribute="top" secondItem="EAR-Dt-gJR" secondAttribute="bottom" constant="39" id="Ybr-CB-P57"/>
+                <constraint firstItem="LxO-xR-zqy" firstAttribute="centerX" secondItem="6a4-er-Nez" secondAttribute="centerX" id="jzF-sg-WM5"/>
+                <constraint firstItem="0io-uc-LCL" firstAttribute="top" secondItem="zdk-bL-SxE" secondAttribute="bottom" constant="39" id="rsy-6l-eWG"/>
+                <constraint firstItem="6a4-er-Nez" firstAttribute="trailing" secondItem="EAR-Dt-gJR" secondAttribute="trailing" constant="20" id="sm6-6R-cjg"/>
+                <constraint firstItem="EAR-Dt-gJR" firstAttribute="top" secondItem="BEC-ef-D1Z" secondAttribute="bottom" constant="68" id="ucb-yd-hFx"/>
+                <constraint firstItem="6a4-er-Nez" firstAttribute="trailing" secondItem="S6c-S3-SD7" secondAttribute="trailing" constant="32" id="uta-JL-vIE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="6a4-er-Nez"/>
         </view>
     </objects>
     <resources>
         <image name="Core Animation.png" width="276" height="201"/>
-        <image name="arcsoft.png" width="141" height="47"/>
     </resources>
 </document>

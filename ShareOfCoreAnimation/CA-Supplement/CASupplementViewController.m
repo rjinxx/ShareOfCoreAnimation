@@ -47,7 +47,10 @@
 
 - (IBAction)presentationLayerDis:(id)sender
 {
-    NSNumber *fromValue = @143.5; NSNumber *toValue = @423.5; NSNumber *endValue = toValue;
+    CGFloat sHeight     = [UIScreen mainScreen].bounds.size.height;
+    NSNumber *fromValue = @165.f;
+    NSNumber *toValue   = @(sHeight * 2.f / 3.f);
+    NSNumber *endValue  = toValue;
     
     CABasicAnimation *animation = [CABasicAnimation animation];
     animation.keyPath = @"position.y";

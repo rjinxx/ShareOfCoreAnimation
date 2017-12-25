@@ -1,8 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CAPartCViewController">
@@ -13,71 +19,77 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LUq-45-vRd">
-                    <rect key="frame" x="125" y="524" width="71" height="24"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" backgroundImage="arcsoft.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUq-45-vRd">
+                    <rect key="frame" x="160.5" y="617" width="54" height="30"/>
+                    <state key="normal" title="Dismiss">
+                        <color key="titleColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="backToMainView:" destination="-1" eventType="touchUpInside" id="Utz-BT-HPd"/>
                     </connections>
                 </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CA Shape Animations " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tFS-Q9-iRq">
-                    <rect key="frame" x="50" y="38" width="221" height="47"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CA Shape Animations " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFS-Q9-iRq">
+                    <rect key="frame" x="98" y="60" width="179" height="21.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test.jpg" id="dN0-FA-qNi">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dN0-FA-qNi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zW4-49-OIy">
-                    <rect key="frame" x="137" y="429" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zW4-49-OIy">
+                    <rect key="frame" x="168" y="517.5" width="39" height="30"/>
                     <state key="normal" title="Reset">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="resetAction:" destination="-1" eventType="touchUpInside" id="bei-lI-CO6"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wP5-bB-s7i">
-                    <rect key="frame" x="35" y="472" width="82" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wP5-bB-s7i">
+                    <rect key="frame" x="35" y="552.5" width="69" height="30"/>
                     <state key="normal" title="Animation">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="animateAction:" destination="-1" eventType="touchUpInside" id="exU-Xs-zDu"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cZu-ub-omW">
-                    <rect key="frame" x="195" y="472" width="101" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZu-ub-omW">
+                    <rect key="frame" x="256" y="552.5" width="95" height="30"/>
                     <state key="normal" title="Custom Layer">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="customLayerAction:" destination="-1" eventType="touchUpInside" id="VL2-BD-33O"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="otH-fg-hfO" firstAttribute="trailing" secondItem="dN0-FA-qNi" secondAttribute="trailing" id="7Vs-By-uIs"/>
+                <constraint firstItem="wP5-bB-s7i" firstAttribute="top" secondItem="zW4-49-OIy" secondAttribute="bottom" constant="5" id="9LF-yN-Rdv"/>
+                <constraint firstItem="LUq-45-vRd" firstAttribute="centerX" secondItem="otH-fg-hfO" secondAttribute="centerX" id="AzZ-n4-1kY"/>
+                <constraint firstItem="zW4-49-OIy" firstAttribute="centerX" secondItem="otH-fg-hfO" secondAttribute="centerX" id="FMu-ao-s9m"/>
+                <constraint firstItem="tFS-Q9-iRq" firstAttribute="centerX" secondItem="otH-fg-hfO" secondAttribute="centerX" id="Hu5-MD-6fg"/>
+                <constraint firstItem="otH-fg-hfO" firstAttribute="top" secondItem="dN0-FA-qNi" secondAttribute="top" constant="20" id="M30-Mo-jcH"/>
+                <constraint firstItem="wP5-bB-s7i" firstAttribute="leading" secondItem="otH-fg-hfO" secondAttribute="leading" constant="35" id="NE5-qb-Roo"/>
+                <constraint firstItem="otH-fg-hfO" firstAttribute="bottom" secondItem="LUq-45-vRd" secondAttribute="bottom" constant="20" id="ZLo-rU-Kon"/>
+                <constraint firstItem="dN0-FA-qNi" firstAttribute="leading" secondItem="otH-fg-hfO" secondAttribute="leading" id="jaK-3H-POD"/>
+                <constraint firstItem="cZu-ub-omW" firstAttribute="top" secondItem="zW4-49-OIy" secondAttribute="bottom" constant="5" id="knJ-F6-Rkv"/>
+                <constraint firstItem="otH-fg-hfO" firstAttribute="trailing" secondItem="cZu-ub-omW" secondAttribute="trailing" constant="24" id="o2I-bS-1Wk"/>
+                <constraint firstItem="zW4-49-OIy" firstAttribute="centerY" secondItem="otH-fg-hfO" secondAttribute="centerY" multiplier="1.55" id="pi2-xR-ISH"/>
+                <constraint firstItem="tFS-Q9-iRq" firstAttribute="top" secondItem="otH-fg-hfO" secondAttribute="top" constant="40" id="qgc-6b-UzI"/>
+                <constraint firstItem="otH-fg-hfO" firstAttribute="bottom" secondItem="dN0-FA-qNi" secondAttribute="bottom" id="zpH-s4-gKw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="otH-fg-hfO"/>
         </view>
     </objects>
     <resources>
-        <image name="arcsoft.png" width="141" height="47"/>
         <image name="test.jpg" width="600" height="537"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
